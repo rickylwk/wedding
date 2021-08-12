@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Silk Serif';
+    font-weight: 300;
+    font-style: normal;
+    src: url('assets/fonts/SilkSerif-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    font-weight: 300;
+    font-style: italic;
+    src: url('assets/fonts/SilkSerif-LightItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    font-weight: 100;
+    font-style: italic;
+    src: url('assets/fonts/SilkSerif-ExtraLightItalic.woff2') format('woff2');
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Didot','Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: rgb(71, 58, 23);
+        // color: red;
+    }
+}
+
+
+h1{
+    font-family: 'Silk Serif';
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.nav-item{
+    padding: 1px;
+    font-family: 'Silk Serif';
+    font-weight: 300;
+    font-style: normal;
+}

@@ -1,26 +1,34 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="pug">
+h1#fade Monse & Ricky
+<div class="nav-item"><a href="#">Our Story</a></div>
+<div class="nav-item"><a href="#">Gallery</a></div>
+<div class="nav-item"><a href="#">Food Menu</a></div>
+<div class="nav-item"><a href="#">Direction</a></div>
+<div class="circle"><a href="#">circle</a></div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { gsap } from "gsap";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  mounted: function(){
+    gsap.to('.circle', {x: 500, duration: 3})
   }
 }
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped lang="scss">
+@import "assets/css/normalize.css";
+@import "assets/css/common.scss";
+
+.circle{
+  background-color:red;
+  height: 5em;
+  width: 5em;
+  border-radius: 100%
 }
+
 </style>
